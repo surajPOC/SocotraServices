@@ -239,7 +239,7 @@ namespace SocotraServices.Controllers
 
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authorizationToken);
 
-                // Price Policy
+                // Lock and Price a quote
                 var lockAndPriceQuoteResponse = await httpClient.PatchAsync(_configuration["socotraBaseUrl"] + "/quotes/" + quoteLocator + "/quote", null);
 
                 if (!lockAndPriceQuoteResponse.IsSuccessStatusCode)
@@ -299,7 +299,7 @@ namespace SocotraServices.Controllers
 
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authorizationToken);
 
-                // Acccept Policy
+                // Acccept a quote
                 var acceptQuoteResponse = await httpClient.PatchAsync(_configuration["socotraBaseUrl"] + "/quotes/" + quoteLocator + "/accept", null);
 
                 if (!acceptQuoteResponse.IsSuccessStatusCode)
@@ -360,7 +360,7 @@ namespace SocotraServices.Controllers
 
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authorizationToken);
 
-                // Price Policy
+                // Issue Policy
                 var issuePolicyResponse = await httpClient.PostAsJsonAsync(_configuration["socotraBaseUrl"] + "/policy/" + policyLocator + "/issue", "");
 
                 if (!issuePolicyResponse.IsSuccessStatusCode)
