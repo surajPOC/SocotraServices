@@ -451,22 +451,22 @@ namespace SocotraServices.Controllers
 
 
 
-        //[HttpGet]
-        //[Route("downloadPdf")]
-        //public void downloadPdf(string formUrl, string filePath)
-        //{
-        //    using (var client = new HttpClient())
-        //    {
-        //        using (var s = client.GetStreamAsync(formUrl))
-        //        {
-        //            //var uniqueFileName = $"{Guid.NewGuid()}.pdf";
-        //            using (var fs = new FileStream(filePath, System.IO.FileMode.OpenOrCreate))
-        //            {
-        //                s.Result.CopyTo(fs);
-        //            }
-        //        }
-        //    }
+        [HttpGet]
+        [Route("downloadPdf")]
+        public void downloadPdf(string formUrl, string filePath)
+        {
+            using (var client = new HttpClient())
+            {
+                using (var s = client.GetStreamAsync(formUrl))
+                {
+                    //var uniqueFileName = $"{Guid.NewGuid()}.pdf";
+                    using (var fs = new FileStream(filePath, System.IO.FileMode.OpenOrCreate))
+                    {
+                        s.Result.CopyTo(fs);
+                    }
+                }
+            }
 
-        //}
+        }
     }
 }
