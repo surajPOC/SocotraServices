@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocotraServices", "SocotraServices\SocotraServices.csproj", "{1C5AEE1C-56E5-4EA1-85DD-2A7FA1EA8BE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C5AEE1C-56E5-4EA1-85DD-2A7FA1EA8BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5AEE1C-56E5-4EA1-85DD-2A7FA1EA8BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5AEE1C-56E5-4EA1-85DD-2A7FA1EA8BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5AEE1C-56E5-4EA1-85DD-2A7FA1EA8BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {274FE485-FA71-4FA6-9236-F19F36C3A7EE}
+	EndGlobalSection
+EndGlobal
